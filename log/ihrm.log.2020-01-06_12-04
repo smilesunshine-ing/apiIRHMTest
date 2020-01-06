@@ -1,0 +1,14 @@
+2020-01-06 12:03:48,065 INFO [root] [__init__.py(<module>:9)] - test日志器能不能正常工作
+2020-01-06 12:03:48,476 INFO [root] [login.py(test_login:31)] - 登录成功返回的数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'b9b7ec7f-75cf-4052-bf0e-6d5006cd1781'}
+2020-01-06 12:03:48,477 INFO [root] [login.py(test_login:38)] - 保存的令牌是{'Content-Type': 'application/json', 'Authorization': 'Bearer b9b7ec7f-75cf-4052-bf0e-6d5006cd1781'}
+2020-01-06 12:03:48,788 INFO [root] [test_emp.py(test02_add_emp:49)] - 添加员工接口返回数据为：{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-01-06 12:03:48,856 INFO [root] [test_emp.py(test03_query_emp:81)] - 查询员工接口返回的数据为：{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-01-06 12:03:48,929 INFO [root] [test_emp.py(test04_modify_emp:102)] - 修改员工信息接口返回的的json数据为{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-01-06 12:03:49,002 INFO [root] [test_emp.py(test05_delete_emp:112)] - 删除员工之后返回的的josn数据为{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-01-06 12:04:04,125 INFO [root] [__init__.py(<module>:9)] - test日志器能不能正常工作
+2020-01-06 12:04:04,504 INFO [root] [login.py(test_login:31)] - 登录成功返回的数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'bf0a7560-bc8e-4206-8d83-83fe6c29b89c'}
+2020-01-06 12:04:04,504 INFO [root] [login.py(test_login:38)] - 保存的令牌是{'Content-Type': 'application/json', 'Authorization': 'Bearer bf0a7560-bc8e-4206-8d83-83fe6c29b89c'}
+2020-01-06 12:04:04,577 INFO [root] [test_emp.py(test02_add_emp:49)] - 添加员工接口返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1214034866441900032'}}
+2020-01-06 12:04:04,646 INFO [root] [test_emp.py(test03_query_emp:81)] - 查询员工接口返回的数据为：{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-01-06 12:04:04,713 INFO [root] [test_emp.py(test04_modify_emp:102)] - 修改员工信息接口返回的的json数据为{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-01-06 12:04:04,790 INFO [root] [test_emp.py(test05_delete_emp:112)] - 删除员工之后返回的的josn数据为{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}

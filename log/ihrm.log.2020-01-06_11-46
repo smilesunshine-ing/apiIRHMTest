@@ -1,0 +1,7 @@
+2020-01-06 11:46:28,414 INFO [root] [__init__.py(<module>:9)] - test日志器能不能正常工作
+2020-01-06 11:46:28,815 INFO [root] [login.py(test_login:31)] - 登录成功返回的数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': '9a9419cd-9b8a-46d6-b2a7-c94ca5fdcec7'}
+2020-01-06 11:46:28,815 INFO [root] [login.py(test_login:38)] - 保存的令牌是{'Content-Type': 'application/json', 'Authorization': 'Bearer 9a9419cd-9b8a-46d6-b2a7-c94ca5fdcec7'}
+2020-01-06 11:46:28,898 INFO [root] [test_emp.py(test02_add_emp:49)] - 添加员工接口返回数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1214030438599053312'}}
+2020-01-06 11:46:28,973 INFO [root] [test_emp.py(test03_query_emp:79)] - 查询员工接口返回的数据为：{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-01-06 11:46:29,049 INFO [root] [test_emp.py(test04_modify_emp:89)] - 修改员工信息接口返回的的json数据为{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-01-06 11:46:29,118 INFO [root] [test_emp.py(test05_delete_emp:99)] - 删除员工之后返回的的josn数据为{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
