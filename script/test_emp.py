@@ -96,27 +96,27 @@ class TestIHRMEmp(unittest.TestCase):
     #     # 断言
     #     assert_common(self, response, 200, True, 10000, '操作成功', )
 
-    @parameterized.expand(read_modify_emp_data)
-    def test04_modify_emp(self,username,success, code, message, http_code):
-        # 调用修改员工数据
-        response = self.emp_api.modify_emp('3254大脸猫哈哈哈')
-        # 获取修改员工接口返回的的json数据
-        jsondata = response.json()
-        # 输出json数据
-        logging.info('修改员工信息接口返回的的json数据为{}'.format(jsondata))
+#     @parameterized.expand(read_modify_emp_data)
+#     def test04_modify_emp(self,username,success, code, message, http_code):
+#         # 调用修改员工数据
+#         response = self.emp_api.modify_emp('3254大脸猫哈哈哈')
+#         # 获取修改员工接口返回的的json数据
+#         jsondata = response.json()
+#         # 输出json数据
+#         logging.info('修改员工信息接口返回的的json数据为{}'.format(jsondata))
 
-        with DBUtils as db_utils:
-            #执行查询语句，查询添加的员工的username是不是修改的username
-            sql = 'select username from bs_user where id ={}'.format(app.EMP_ID)
-            db_utils.execute(sql)
-            #获取执行结果
-            result = db_utils.fetchone()[0]
-            logging.info('从数据库中查询出的员工的用户名为：{}'.format(result))
-            self.assertEqual(username,result)
+#         with DBUtils as db_utils:
+#             #执行查询语句，查询添加的员工的username是不是修改的username
+#             sql = 'select username from bs_user where id ={}'.format(app.EMP_ID)
+#             db_utils.execute(sql)
+#             #获取执行结果
+#             result = db_utils.fetchone()[0]
+#             logging.info('从数据库中查询出的员工的用户名为：{}'.format(result))
+#             self.assertEqual(username,result)
 
 
         # 断言
-        assert_common(self, response, http_code, success, code, message)
+#         assert_common(self, response, http_code, success, code, message)
 
     # def test04_modify_emp(self):
     #     # 调用修改员工数据
